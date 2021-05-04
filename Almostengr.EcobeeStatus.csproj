@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-Almostengr.EcobeeStatus-064610F5-0BA9-4F6E-8FA5-5C5E4331960B</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="appsettings.json"/>
+    <Content Remove="appsettings.Development.json"/>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.10"/>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0"/>
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="89.0.4389.82"/>
+  </ItemGroup>
+</Project>

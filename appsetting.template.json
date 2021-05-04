@@ -1,0 +1,16 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AppSettings": {
+    "HomeAssistant": {
+      "Url": "<HA IP address>",
+      "Token": "<HA token>"
+    },
+    "EcobeeStatusUrl": "https://status.ecobee.com"
+  }
+}

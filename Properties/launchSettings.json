@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Almostengr.EcobeeStatus": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
