@@ -6,7 +6,7 @@ Documentation=https://thealmostengineer.com/ecobeestatus
 [Service]
 Type=simple
 Restart=always
-ExecStart=/home/iamadmin/ecobeestatus
+ExecStart=/home/iamadmin/ecobeestatus/Almostengr.EcobeeStatus
 User=iamadmin
 
 [Install]
