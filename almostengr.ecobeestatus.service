@@ -1,0 +1,13 @@
+[Unit]
+Description=Ecobee Status Monitor by almostengr
+After=network.target
+Documentation=https://thealmostengineer.com/ecobeestatus
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/iamadmin/ecobeestatus
+User=iamadmin
+
+[Install]
+WantedBy=multi-user.target
