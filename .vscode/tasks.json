@@ -37,6 +37,46 @@
                 "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Deploy to Local",
+            "command": "/bin/bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                "\"",
+                "dotnet",
+                "clean",
+                "-c",
+                "DEBUG",
+                "&&",
+                "dotnet",
+                "clean",
+                "-c",
+                "RELEASE",
+                "&&",
+                "dotnet",
+                "publish",
+                "--self-contained",
+                "-r",
+                "ubuntu.20.04-x64",
+                "-c",
+                "RELEASE",
+                "&&",
+                "scp",
+                "-pr",
+                "chromedriver",
+                "almostengr.ecobeestatus.service",
+                "${workspaceRoot}/bin/RELEASE/netcoreapp3.1/ubuntu.20.04-x64/publish/*",
+                "iamadmin@media://home/iamadmin/ecobeestatus",
+                "&&",
+                "dotnet",
+                "clean",
+                "-c",
+                "RELEASE",
+                "\""
+            ],
+            "group": "build"
         }
     ]
 }
